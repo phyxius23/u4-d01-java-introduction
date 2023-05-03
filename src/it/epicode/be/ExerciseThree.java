@@ -1,5 +1,6 @@
 package it.epicode.be;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ExerciseThree {
@@ -11,20 +12,17 @@ public class ExerciseThree {
 		 * ordine di inserimento inverso 
 		 */
 		Scanner in = new Scanner(System.in);
-		
-		System.out.println("Inserisci una stringa: ");
-		String textOne = in.nextLine();
-		
-		System.out.println("Inserisci una seconda stringa: ");
-		String textTwo = in.nextLine();
-		
-		System.out.println("Inserisci una terza stringa: ");
-		String textThree = in.nextLine();
-		
-		System.out.println("Il testo inserito: " + textOne + ", " + textTwo + ", " + textThree);
+
+    String[] text = new String[3];
+
+    for(int i = 0; i < text.length; i++){
+      System.out.println("Inserisci una stringa: ");
+      text[i] = in.nextLine();
+    }
+			
+		System.out.println("Il testo inserito: " + Arrays.toString(text));
 		
 		in.close();
-
 	}
 
 }
