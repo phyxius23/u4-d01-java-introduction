@@ -20,14 +20,14 @@ public class ExerciseTwo {
 		System.out.println("Il prodotto dei numeri inseriti è: " + resultMultiplication);
 		
     /* *********** CONCATENA *********** */
+		System.out.println("Inserisci una stringa: ");
+		String text = in.next(); //ho utilizzato .next() e non .nextLine() anche se non so il motivo
+
     System.out.println("Inserisci un numero intero: ");
     int num3 = in.nextInt();
- 
-		System.out.println("Inserisci una stringa: ");
-		String text = in.nextLine();
 
     String resultConcatenation = concatena(text, num3);
-		System.out.println(resultConcatenation);
+		System.out.println("Il risultato della concatenzaione è: " + resultConcatenation);
 		
     /* *********** INSERISCI IN ARRAY *********** */
 		String [] arrayOfString = {"uno", "due", "tre", "quattro", "cinque"};
@@ -35,7 +35,7 @@ public class ExerciseTwo {
 		
     String[] newArrayString = inserisciInArray(arrayOfString, newElement);
 		
-		System.out.println(Arrays.toString(newArrayString));
+		System.out.println("Questo è il contenuto del nuovo array: " + Arrays.toString(newArrayString));
 
 		in.close(); // chiusura di SCANNER, VA FATTA SEMPRE!
 	}
