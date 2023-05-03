@@ -1,6 +1,7 @@
 package it.epicode.be;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class ExerciseThree {
@@ -20,7 +21,10 @@ public class ExerciseThree {
       text[i] = in.nextLine();
     }
 			
-		System.out.println("Il testo inserito: " + Arrays.toString(text));
+		System.out.println("Il testo inserito in ordine di inserimento è: " + Arrays.toString(text));
+
+    Collections.reverse(Arrays.asList(text));
+    System.out.println("Il testo inserito in ordine inverso è: " + Arrays.toString(text));
 		
 		in.close();
 	}
