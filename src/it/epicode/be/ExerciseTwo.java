@@ -7,10 +7,7 @@ public class ExerciseTwo {
 
 	public static void main(String[] args) {
 		
-		/* 
-     * MOLTIPLICA: accetta due interi e ritorna il loro prodotto 
-     * --------------------------------------------------------------------
-     */
+    /* *********** MOLTIPLICA *********** */
 		Scanner in = new Scanner(System.in);
 		
 		System.out.println("Inserisci un numero intero: ");
@@ -22,23 +19,17 @@ public class ExerciseTwo {
     int resultMultiplication = moltiplica(num1, num2);
 		System.out.println("Il prodotto dei numeri inseriti è: " + resultMultiplication);
 		
-    /* 
-     * CONCATENA: accetta una stringa e un intero e restituisci una stringa che concatena gli elementi
-     * --------------------------------------------------------------------
-     */
+    /* *********** CONCATENA *********** */
+    System.out.println("Inserisci un numero intero: ");
+    int num3 = in.nextInt();
+ 
 		System.out.println("Inserisci una stringa: ");
 		String text = in.nextLine();
-		
-		System.out.println("Inserisci un numero intero: ");
-		int num3 = in.nextInt();
 
     String resultConcatenation = concatena(text, num3);
 		System.out.println(resultConcatenation);
 		
-    /* 
-     * INSERISCI IN ARRAY:
-     * --------------------------------------------------------------------
-     */
+    /* *********** INSERISCI IN ARRAY *********** */
 		String [] arrayOfString = {"uno", "due", "tre", "quattro", "cinque"};
 		String newElement = "sei";
 		
